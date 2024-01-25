@@ -34,5 +34,4 @@ function changeSlider(direction) {
 
     mainSlide.style.transform = 'translateY(${height * indexActiveSlide}px)';
     sidebar.style.transform = 'translateY(${-height * indexActiveSlide}px)';
-
 }
