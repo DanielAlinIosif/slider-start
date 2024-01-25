@@ -1,3 +1,4 @@
+const sidebar = document.querySelector('.sidebar');
 const mainSlide = document.querySelector('.main-slide');
 const numberOfSlides = mainSlide.querySelectorAll('div').length;
 const upBtn = document.querySelector('.up-button');
@@ -28,7 +29,5 @@ function changeSlider(direction) {
             indexActiveSlide = numberOfSlides - 1;
         }
     }
-
-    console.log(indexActiveSlide); 
 
 }
