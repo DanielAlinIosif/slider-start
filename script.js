@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const mainSlide = document.querySelector(".main-slide");
   const downButton = document.querySelector(".down-button");
   const upButton = document.querySelector(".up-button");
-  const numberOfSlides = mainSlide.querySelectorAll("div");
 
   mainSlide.style.top = '';
   let activeSlideIndex = 0;
@@ -31,4 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const height = mainSlide.clientHeight;
     mainSlide.style.transform = `translateY(${-activeSlideIndex * height}px)`;
   }
+});
+
+// Adaugă evenimentul de scroll pentru sidebar
+document.getElementById('sidebar').addEventListener('scroll', function() {
+  // Aici poți adăuga orice logică suplimentară, dacă este necesar
+  console.log('Sidebar scrolled!');
 });

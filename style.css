@@ -11,11 +11,30 @@ body {
   height: 100vh;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
 .container {
   position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  overflow-y: auto; /* Adaugă un scrollbar doar dacă este necesar */
 }
 
 .sidebar {
@@ -25,8 +44,6 @@ body {
   top: 0;
   left: 0;
   transition: transform 0.5s ease-in-out;
-
-  
 }
 
 .sidebar > div {
